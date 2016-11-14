@@ -4,7 +4,8 @@
  and open the template in the editor.
  */
 package ense479soundartproject;
-
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Mixer;
 /**
 
  @author Dolan
@@ -12,12 +13,15 @@ package ense479soundartproject;
 public class ENSE479SoundArtProject
 {
 
-    /**
-     @param args the command line arguments
-     */
+    public static Mixer mixer;
+    
     public static void main(String[] args)
     {
-        // TODO code application logic here
+        Mixer.Info[] mixInfo = AudioSystem.getMixerInfo();
+        for (Mixer.Info info : mixInfo)
+        {
+            System.out.println(info.getName() + "--" + info.getDescription());
+        }
     }
     
 }
