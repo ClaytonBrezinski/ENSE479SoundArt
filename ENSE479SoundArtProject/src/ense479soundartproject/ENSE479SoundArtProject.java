@@ -48,7 +48,7 @@ public class ENSE479SoundArtProject
         // put a sound file in the clip
         try 
         {
-            String soundFile = "Lunar Intro.wav";
+            String soundFile = "record.wav";
             URL soundURL = ENSE479SoundArtProject.class.getResource("/resources/" + soundFile);
            AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
            clip.open(); //clip fully loads the file before playing it
