@@ -10,5 +10,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-/ENSE479SoundArtProject/nbproject/private/
+/JavaSoundAPI_Tutorial3/nbproject/private/
+/SoundTutorialPart2/nbproject/private/
 /ENSE479SoundArtProject/build/
+/ENSE479SoundArtProject/nbproject/private/
