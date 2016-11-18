@@ -115,7 +115,6 @@ public class ENSE479Project
             {
                 lue.printStackTrace();
             }
-
             catch (InterruptedException ie)
             {
                 ie.printStackTrace();
@@ -131,7 +130,6 @@ public class ENSE479Project
         System.out.println("Begin playback from the file");
         // setup the mixer
         mixer = AudioSystem.getMixer(mixInfoArray[0]);
-
         // create a dataline in the format of a clip
         AudioFormat format = null;
         DataLine.Info dataInfo = new DataLine.Info(Clip.class, format);
@@ -181,7 +179,9 @@ public class ENSE479Project
             }
         }
         while (clip.isActive() == true);
+        System.exit(0);
     }
+    
 }
 
 /*
